@@ -1,0 +1,91 @@
+@font-face {
+    font-family: filsonbold;
+    src: url(../font/FilsonBold.ttf);
+}
+@font-face {
+    font-family: filsonlight;
+    src: url(../font/FilsonLight.ttf);
+}
+
+html  {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+body > div {
+    display: flex;
+
+}
+
+#game {
+    background-color: #414141;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    padding: 10px;
+    margin-right: 30px;
+}
+
+#game > div {
+    background-color: #6b6b6b;
+    color: white;
+    font: 60px filsonbold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scoreboard {    
+    background-color: #414141;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: fit-content;
+}
+
+#scoreboard h1 {
+    font: 30px filsonbold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#scoreboard > div {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    font-family: filsonlight;
+}
+
+#scoreboard > div > div {
+    padding: 4px;
+}
+
+#scoreboard button {
+    background-color: #ea6900;
+    color: white;
+    font: 16px filsonlight;
+    margin-top: 10px;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#scoreboard button:hover {
+    background-color: #dd6300;
+}
